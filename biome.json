@@ -9,7 +9,15 @@
 		"rules": { "recommended": false },
 		"ignore": ["dist"]
 	},
-	"javascript": { "formatter": { "quoteStyle": "double" } },
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"lineWidth": 120,
+			"indentStyle": "tab",
+			"indentWidth": 4,
+			"semicolons": "always"
+		}
+	},
 	"overrides": [
 		{
 			"include": ["**/*.{ts,tsx}"],
@@ -270,5 +278,10 @@
 				}
 			}
 		}
-	]
+	],
+	"json": {
+		"parser": {
+			"allowComments": true
+		}
+	}
 }
